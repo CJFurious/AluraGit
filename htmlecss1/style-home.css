@@ -1,0 +1,103 @@
+/* Para chamar uma id usa-se #
+Para chamar uma classe usa-se . */
+header {
+  background: #bbbbbb;
+  padding: 20px 0;
+}
+
+/* padding = espaçamento INTERNO 
+   margin = espaçamento EXTERNO */
+
+.caixa {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+.banner {
+  width: 100%;
+}
+
+.principal {
+  background: #cccccc;
+  padding: 30px;
+}
+
+.titulo-centralizado {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* font-size é o tamanho da fonte */
+#missao {
+  font-size: 20px;
+}
+
+em strong {
+  color: red;
+}
+
+/* font-style é o estilo da fonte*/
+.itens {
+  font-style: italic;
+}
+
+.beneficios {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.extras {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+/* display é a forma que um bloco será exibido na dela, ou seja, ela toda, ou parcialmente
+vertical-align é o alinhamento vertical do item
+width é o tamanho do item
+margin é o tamanho da tela por inteiro, nesse valor podemos colocar ou tirar um espaço do canto da tela */
+
+.imagemBeneficios {
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  /* No CSS, ao referenciarmos o endereço de uma imagem, usamos o valor url. */
+  background: url(./assets/pagina\ produtos/bg.jpg);
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
+}

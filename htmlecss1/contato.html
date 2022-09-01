@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Barbearia Alura</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="caixa">
+      <h1> <img src="./assets/pagina produtos/logo.png" alt="logo da Barbearia alura"> </h1>
+      <!-- tag alt serve para acessibilidade, tipo uma legenda -->
+      <nav>
+        <ul>
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="produtos.html">Produtos</a></li>
+          <li> <a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contatos">
+    <!-- input pega qualquer tipo de informaçao
+label cria uma estrutura melhor no formulario criando uma etiqueta para cada item -->
+    <!-- A tag <label> é uma etiqueta para a entrada de dados, para o <input>. -->
+    <form>
+      <label for="nomesobrenome">Nome e sobrenome</label>
+      <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+
+      <!-- pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" -->
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea name="" id="mensagem" cols="60" rows="10" class="input-padrao" required></textarea>
+
+      <!--  O textarea, para entradas de texto de mais de uma linha -->
+
+      <fieldset>
+        <!-- A tag <fieldset> é usada para criar uma divisão no nosso formulário, com um ou mais <input>. -->
+
+        <legend>Como prefere o nosso contato?</legend>
+
+        <!-- É a tag <legend> que usamos para um título de um grupo de campos em qualquer formulário. -->
+
+
+        <!--  A propriedade name só pode ser "preenchida" uma única vez, por isso que, quando eu seleciono um dos itens, ele desmarca o outro, mantendo somente um selecionado. -->
+
+        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+
+
+        <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">
+          Telefone</label>
+
+
+        <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+          Whatsapp</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual horário prefere ser atendido?</legend>
+
+        <!-- A estrutura da tag <select> é composta de um ou mais <option>. -->
+
+        <select name="" id="">
+          <option value="manha">Manhã</option>
+          <option value="tarde">Tarde</option>
+          <option value="noite">Noite</option>
+        </select>
+      </fieldset>
+
+
+      <label class="checkbox"><input type="checkbox" checked>
+        Gostaria de receber nossas novidades por email?</label>
+
+      <input type="submit" value="Enviar formulário" class="enviar">
+
+    </form>
+
+    <table>
+      <!-- A criar uma tabela HTML
+        A tag table, que representa a tabela
+        A tag tr, que representa a linha da tabela
+        A tag td, que representa a célula da tabela
+        A tag thead, que representa o cabeçalho da tabela
+        A tag tbody, que representa o corpo da tabela
+        A tag th, que representa a célula do cabeçalho da tabela
+        A tag tfoot, que representa o rodapé da tabela -->
+      <thead>
+
+        <tr>
+        <tr>
+          <td colspan="2">Nosso horario de funcionamento</td>
+        </tr>
+        <th>Dia</th>
+        <th>Horário</th>
+        </tr>
+
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>Segunda</td>
+          <td>8h ~ 20h </td>
+        </tr>
+        <tr>
+          <td>Quarta</td>
+          <td>8h ~ 20h</td>
+        </tr>
+        <tr>
+          <td>Sexta</td>
+          <td>8h ~ 20h</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <footer>
+
+    <img src="./assets/pagina produtos/logo-branco.png" alt="logo da Barbearia alura">
+    <p class="copyright">
+      <!-- Os caracteres Unicode estão disponíveis para serem usados como um complemento ao nosso texto. -->
+      &copy; Copyright Barbearia Alura - 2022
+    </p>
+
+  </footer>
+
+
+</body>
+
+</html>
